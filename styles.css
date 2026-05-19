@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+img {
+  display: block;
+  width: 100%;
+ 
+}
+ 
+ 
+:root {
+  --cream: #f2ebe3;
+  --white: #ffffff;
+  --green: #3d8168;
+  --green-hover: #1a4032;
+  --dark: #1c232b;
+  --gray: #6c7289;
+}
+ 
+ 
+body {
+  min-height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem;
+}
+ 
+ 
+.card {
+  width: 600px;
+  display: flex;
+ 
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+}
+ 
+ 
+.card-obrazek,
+.card-celek {
+  width: 50%;
+}
+ 
+.card-obrazek img {
+  height: 100%;
+  object-fit: cover;
+ 
+}
+ 
+ 
+.card-celek {
+  padding: 2rem;
+}
+ 
+.mininapis {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--gray);
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+ 
+.nazev {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+ 
+.velkejtext {
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+ 
+ 
+.ceny{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+ 
+.cena1 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--green);
+}
+ 
+.cena2 {
+  color: var(--gray);
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+ 
+ 
+.tlacitko {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+ font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+ 
+.tlacitko img {
+  width: 14px;
+  height: 14px;
+}
+ 
+.tlacitko:hover {
+  background-color: var(--green-hover);
+}
+ 
+ 
+ 
+@media (max-width: 650px) {
+  body {
+    padding: 1rem;
+  }
+ 
+  .card {
+    width: 100%;
+    max-width: 375px;
+ 
+    flex-direction: column;
+  }
+ 
+  .card-obrazek,
+  .card-celek {
+    width: 100%;
+  }
+ 
+  .card-obrazek img {
+    height: 240px;
+  }
+ 
+  .card-celek {
+    padding: 1.5rem;
+  }
+ 
+  .nazev {
+    font-size: 2rem;
+  }
+}
